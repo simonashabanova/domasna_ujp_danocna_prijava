@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ujp_danocna_prijava</title>
+    </head>
+    <body>
+        <img src= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXcAAACGCAMAAAARpzrEAAAAwFBMVEX29/i8vcDPHGr5+vvw8fLBwsW5urz3/Pzt7vC8xsXf4OL4///QAGXMAFrMAF29vr/LAFfNAGDm5+nlr8DOKW3z7O7x4+frydPKAFLXYIrkqrzadZfz6u3WWIXgla3pwc3ZbZLdhaLnt8bjorbu2d/U1dffjaju1dzLzM7SOHTcfZ3sztjVUIHSP3jglK3jpbnCoKu/sbbJAErEjZ/HepTJZYjWXIi/tLnDlaTLTn3USX/IbY3GgpnKXYTCm6jGfZWeSdeDAAANU0lEQVR4nO2dDXuiuBbHKTBN20NiUl4EQUBkdFCou72zzt3evXe//7e6J6BWO9qWFunO0/yftmjIC/yIyfHkQDVNSUlJSUlJSUlJSUlJSUlJSemfJmOrjz6Qz6Wbm9tG2+1pXb0k81ldmfvtmqcO6HPIuLn8IN187g+YcXt58RH67Nw140px/xAZ5pcP6PKfmvv21L/1D/4zc7/6ujl3o3/wn5r75Q78177Bf27ul9+24G96Bv+5uQ8uvmxe921PfnLuCN5sABhXvYL/3Nyvq8FgcLUBbyru/Qi5i+LH4PJ2i6BHQ/6Tc7d0/ffBjkGP9qTibv12fdm/Ia+46+Jf14/2ZF+GvOKOPf47gt+k9WXIK+4S/B/XaMhvzJp+DHnFvQb/55492YtjWHFvwFcXO3vSML8o7ufUHnddd36/fmRxfkNecd9q3548v0decX8E/+/r/hzDivujxF979uSZwSvu+z3+P9ePjuHzGvKK+wH4/14PBmYfhrzifgj+4WJwcduDIa+4P5HzY+efPGeEh+L+k37rw5BX3H+S9b8eHMOK+xHwPdiTivsx8N/Pbk8q7kfBoz25CzQ4C3jF/Tj4PweDi6szGvKK+wnwe4EG54jwUNxPai/QoHt7UnE/qQPHcNfgFffTOgg06NiQV9yfA//9bIZ8O+6AIqcLGIQAvFxLk+lVWY81AuRN5X7Wi9wPAw06tSfbcZ/MZrPp8hQvyFfTycOLlZDVbGJqZCr/tpfhTZKOwL/MHe3J68dAgy7tyXbcucU55SMib3P+aSfEPtX12UkoxmYPjAVFdMKiLr47+Pg8rfXIsZHl/ex4+631Cu5oT14+2pMdhmq3404r0BLhEKLl0WOvN5EP1hL5mRyHtL10jZj1FlzXAC93650Q6NYElkIXLu7IvaYERDiC4Ju9wwGzKdHUIX8M+cdzNWw/197d61/DHfUYaGCYgw/iXiBYISBhvh8CEYxzxqHwXZLfh4ljc3/sGi6mcfoAs/scZv4EHnyI7yda4ft8Ag33soDYGgsXJphYaSYvYHyfuJiliAxIKZYfA0y4z1MCpW9iXUNyH4JL72Hp30FCfZ8t39vlX8n9LPZkS+6OPSpFgP3em3IbdD3LCgE2HcEdn48storxE+GKMrOtMSZ5ObVmOKwQdqfZInMrbjTcY+6WDwvmevrCndFEE2XuJ2TNhnOBvNdOZosARjyYL+gMAkYgpkPCF7C2KMx5DOvCG7L0bfNya+6HgQYd2ZPtuDOdc166CZsMExaA7gA8CEBsUDiwYjFAyJeuJCJq7pUjuesLyzRwgLpzmFZzF0s6EnchcwnMV6XINKtal2DQajgccw2KEkwaQMlMApYOgRUuSobcJwmvGu7gZaHojfs5HMNtxxkNx2Rii4f1Op1suBMI2ZDeQcYzAlOamFvuIqRDJrk7VUQSqk/KLXfTcsQQubs6Sxcs04Sjp8SlznqcBq4mFjigBFDhFQVHIPeyLMSQ0FSfTHjNPeQPcY/cDwMNOgHfenyXLS/5jJjxnGy4kyUrmEdyHgBU3HXphrvFph6X44zJ1th7XdhyZzC2hJYyc0RtsqLY38dzP64v4zTD64eWKtYRsgRyVu7GGWZZCFxyd/mY1K30xV231teDiy4dw+24+059rqSkgeMncoaFihIcGawS+2bKHZ3HSwf7uIm8ZniVcpxXS47T53JBgzHjkSHtSE7kPJByd8iLkNGRxiqsx1zxYuwvMuQr8CfzGK0YnYMceu78IfFpAqkvuRMhFjoObv1x161q8Bho0IEh3457vNoYb9N0sQRjOiVkFBsG3DEbdxA7DbGLhhPX0GIbkjgnUZyAHRtRnBl3wWoe54bMFmsepmexCVk68XBfPIJlvIQkTG2w2RQVUxuiu2DmEZmdDGOPYCaSxfU4k4fpMovfib0V98NAg/dHeLTjTrY2M37JN5q3hBj50GHuJpWgFQ5NToM0WeqXuAFiNF+StgmkKdG8rDfy3egec4J2b2P2XSuyZJN/nrKpdEcYpC/7fad9Q/699mQHfjES39NRVz4T/Fo0rDdD7+heCH3hdeTKa8t9P9DgvYZ8F/5I/FrZHfatc+DUYbn5yV1t1ZZ74xjeHuX7DPlO/MC9upK7a6w19w7tSeV/bwe+q0CDn7kbv77Ox72zQIMD7ubt7c3NzVfUN9SXX0nfaslDv/mK53Bze3V79ZJ7/y3cDwMN3m5PHu3vzUX4xfT0+M/T36W6CDRQ43t7dfFEA8X9LeDf/0QDxf1N4N8duKq4vw38f6/fd2P9Ke6N96Pxm0hpzQvjcZ+xSW9ebssZ20wa2V+xNnb17UrKvc0fstmxKWEcNrkttnXpNHUZ28bJprLNrja96B3cn95Y37rLn+Bu2CPp6RrZ+COF7+SLzMOzM0c2ljHmdYL0EBj5aBtaQaJpPM1rVsno0Y9ieKNl7bAcmfWbTVXuKDFkRlezsYJNiWY3ikSbFnAHls1Hc3clXwxHQwKebEc64JrD8zCPKYsOW4B/D3d5Y/2eWdN6dj3BHSb+HZDEn7hccI6/nkmFjOFICLEpHyKlKZXLz3RO5EIGa8w4I2eUykx4ddjeAqisCeR6iXSgkYwyrBNzeT5mgdL3NFqC4dX1Ile5Ls6FgLlsm4ocAt81SEHvIOAziBj3YMVl63KZXB4W40mdBwq6aOGUfx/3Q7Om7ex6apwxLV2DNY0iunY9d0w9U1SutxJyhcmyEBeZslUU2QjXcIUl7OZDP+MjSOSKBBlhorvjPqQzJBxaVoG7EjaLvEQU4NEQZCueXJ6CsS4a7hR3e7oOOU0jbyFSSJkLU2HFYAqaj9kI5lQfanlFbWKKsRtN5IoI5lkJa9If90M3WcvZ9RR3iKktl9I8GoABQc1dxnBQpLEoaWRgf89AvgG8AlOr2kTBEAOLyF5c6Zi8c9fX3F02XtClQRI6BURY1txBVi65Z2zHPQZCau64O2IlMjUjYVkxjjhMt0qAkGV4/XJWgcvWAHcNdxPz9Mm9cZO97Tbj0/aMVU35nEjuWsO9WCaheIAJXdqSzFQUVSUKzajXnuV402jilHI05qHGnC2EmjsZUXuJKEkiHCype8RjuuM4Oqu569aMbrnjRnJnwTAZiwUyNQI2E5gMqWVFBjywesEQe0GEHzgyq7lrKYtFr9wPvTWtzJqT3OUHux50d9xlDIeeExxqiAwZm4qHIHDEDJZ0QoZsN7AKZtkEr86chDVH+c295g6VIOAwE7lXQVDg+OGxIsA6JPdgRlc2f8JdWNhkZSLsjK5zmSwXxHMCFXM33HM62XAXCS1d2i/3xlvzFqfBM/a7wxKyz73I53jKGcKglkigHmeg4FpoCY5jRD2zEhyUXJ2amqUzLqx6ZnWHec19zizKLbGCepzBOXIZ7cYZvcCRf/WUOw3yuScXzHWdRXI9G1bMsQqCEznmNFz8QGV0RRruukM9r2/uer369wanwen+DqWD57bHvZIh2FCKcLFIRdBw1/BkhbNYLEohl/rITJgADnUzVmKiI7ulMbxfwAhR4wyJaTidNtxLWnNv5lUEOz/CPayjvrG/i2Y9O2IswhEHaeOnAOnPSEo9kFEeMs8MPoK7jCZr7zQ4Oa8uHngmufO1RCPtSBk7Y3i+nF5B59GUYaNoLNr8DhNyLneTmItUZ2N44DkmxlwS1HTxIJAtE7JkyZcJs2RJtGe4nIHHHMcZIednf2NHylKWhXWmm0BWURAiI2we8Iq5gs8hpawUWEMqJDlLF1oqxz7P79GO3IH/+w1Og5Pcw3JaDxIpQiBxGmmp7EokS7MmYiNJ0jAMFyuYpfLbDpnUG7CDYhwbUTqR36e8dFFfq7QKlrBMVzXVdDSXJcPYJFGKFg+5w8rD1EX7Mp3XX8jqJsIQvLQxiLD5JTHyNFumC/n1CiuHLKjWU4Kji6wqLJk5xTxalLZZYO+Iu7w7ofXTU54ZZ5ozqDcEZELNoEnGDYH67g85pDf5Gx9CnbbJbOw2uPPnkk8r39TU3NCBKbs7O+qiBpDtjSJk2w4ERV3X1I+a9lvdC9IV9/rpKS2dBr+2X4xMZ41PInRfzPuzOuOuW62fxvdrc98GUpE3hex1x12vn57Sxqz5xbm/S51yt9o5DRT3zsC3choo7t2Bb7MWorh3CH5/LeSF2VVx71S/D175rFvFvVMdPJvsOaeB4t4x+L9eZ9Yo7l2D/+NVZo3i3jn4P/fuhDIvTpBX3LsH/5q1EMX9HHrZaaC4n0Mvr4Uo7meReCmAUnE/j15yGiju5wL/fACl4n42OT+eCaBU3M+n5wIoFfcz6pkASsX9rOBProUo7mfVQQClqbjX6oH7SaeB4n52HQ2gVNzPrqNOA8W9B/B/X18+dRoo7n2A/2PvKR63intf3Guz5tBpoLj3A/6p00Bx74v8odNAce8N/KHTQHHvDfx3nF13/zzhc3OX93EeUxucrxb98+JiuxbymXV1ORhcH9fg1bq4fK0ufvy4wOy3nx78wb+NeDW+d+vrR5/3P0qvf5DZ1et1e1QffapKSkpKSkpKSkpKSkpKSkpKH6b/A6i6lXfLlKIpAAAAAElFTkSuQmCC"/>
+        <h1>ГОДИШНА ДАНОЧНА ПРИЈАВА<br/>за утврдување на персонален данок на доход</h1>
+        <h2>ПДД-ГДП</h2>
+        <p>
+                ЕМБГ
+                <table border= "1">
+                    <tr>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                        <td>__</td>
+                    </tr>
+                </table>
+        </p>
+        <p>
+            Име и презиме<br>
+            и адреса на живеење<br>
+            за контакт<br>
+            <table border = "1">
+                <tr>
+                    <td>________________________________________________</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            Телефон<br>
+            <table border= "1">
+                <tr>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>__</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            е-пошта<br>
+            <table border= "1">
+                <tr>
+                    <td>_____________________________________</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            Датум и број на прием
+            <table border= "1">
+                <tr>
+                    <td>________________________________________________</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            Даночен период<br>од
+            <table border= "1">
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>.</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>.</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            до
+            <table border= "1">
+                <tr>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>.</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>.</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>7</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            Рок за<br>поседување
+            <table border= "1">
+                <tr>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>.</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>.</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>8</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            Исправка на<br>
+            "ПДД-ГДП"
+            <table border= "1">
+                <tr>
+                    <td>__</td>
+                </tr>
+            </table>
+        </p>
+        <h3>ОСТВАРЕНИ ПРИХОДИ</h3>
+        <p>
+            <table border= "1">
+                <tr>
+                        <td><h5>Вид на остварен приход</h5></td>
+                        <td><h5></h5></td>
+                        <td><h5>Бруто износ на приход</h5></td>
+                        <td><h5>Вкупен износ на одбитоци</h5></td>
+                        <td><h5>Вкупен износ на платени аконтации</h5></td>
+                </tr>
+                <tr>
+                    <td><h5>Плата и надоместоци на плата од работен однос и исплата по основ<br>
+                            на деловна успешност на работодавачот на кои се платени придонеси</h5></td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Плата и надоместоци на плата од работен однос и исплата по основ на деловна<br>
+                            успешност на работодавач-кој не е заштитно друштво, на вработени<br>
+                            инвалидни лица</h5></td>
+                    <td>1-а</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Плата и надоместоци на плата од работен однос и исплата по основ на деловна<br>
+                            успешност кај заштитни друштва</h5></td>
+                    <td>1-б</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Плата и надоместоци на плата од работен однос и исплата по основ на деловна<br>
+                            успешност кај корисници на технолошка индустриска развојна зона</h5></td>
+                    <td>1-в</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Плата и надоместоци на плата од работен однос и исплата по основ на деловна<br>
+                            успешност на работодавач кој има ослободување по член 98 од Законот за<br>
+                            вработување и осигурување во случај на невработеност</h5></td>
+                    <td>1-г</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Дополнителни примања и надоместоци на трошоци од работен однос на кои<br>
+                            не се платени придонеси</h5></td>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Пензии</h5></td>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Примања на членови на органите на управување и на органите на надзор во<br>
+                            трговските друштва</h5></td>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Примања на функционери, пратеници, советници и други носители на јавни<br>
+                            функции</h5></td>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Надоместоци за работа на судии поротници, вешти лица и стечајни управници<br>
+                            кои немаат својство на вработени лица во соодветните институции или друштва</h5></td>
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Надоместоци на членови на Македонска академија на науките и уметностите</h5></td>
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Примања по основ на договор за повремено или привремено вршење на услуги</h5></td>
+                    <td>8</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Имот и имотни права (закупнини)</h5></td>
+                    <td>9</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Авторски права и права од индустриска сопственост</h5></td>
+                    <td>10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Дивиденди и други приходи остварени со учество во добивката кај правни и<br>
+                         физички лица</h5></td>
+                    <td>11</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Камати за кои постои обврска за плаќање на данок</h5></td>
+                    <td>12</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Добивки од игри на среќа и други наградни игри</h5></td>
+                    <td>13</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Други приходи на кои аконтацијата на данокот се плаќа по одбивка</h5></td>
+                    <td>14</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Други приходи на кои аконтацијата на данокот не се плаќа по одбивка</h5></td>
+                    <td>15</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Нето-приход остварен од вршење на самостојна дејност</h5></td>
+                    <td>16</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Вкупен приход од земјоделска дејност според паушално утврден приход</h5></td>
+                    <td>17</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Капитални добивки</h5></td>
+                    <td>18</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Даночно ослободување по основ на донации во висина од 20% од годишниот<br>
+                        даночен долг, но не повеќе од 24.000 денари</h5></td>
+                    <td>19</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h5>Искористено даночно ослободување при аконтативно оданочување</h5></td>
+                    <td>20</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><h3>ВКУПНО:</h3></td>
+                    <td>21</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </p>
+        <p><h3>ПОДАТОЦИ ЗА ПОДНОСИТЕЛОТ НА ПРИЈАВАТА</h3></p>
+        <p>
+            Име и презиме<br>
+            и потпис
+            <table border= "1">
+                <tr>
+                    <td>________________________________________</td>
+                </tr>
+            </table>
+        </p>
+        <p>
+            Датум на<br>
+            поднесување
+            <table border= "1">
+                <tr>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>.</td>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>.</td>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>__</td>
+                    <td>__</td>
+                </tr>
+            </table>
+        </p>
+        <p><h3>ЗАБЕЛЕШКА</h3></p>
+        <table border="1">
+                <tr>
+                    <td>_____________________________________________________________________________</td>
+                </tr>
+        </table>
+    </body>
+    <body>
+        <h1>УПАТСТВО ЗА ПОПОЛНУВАЊЕ</h1>
+        <h2>ПДД-ГДП</h2>
+        <hr>
+        <p>Приходите кои граѓанинот ги остварува во земјата и во странство, задолжително треба да ги пријави во Управата за јавни приходи, со<br>
+                поднесување на Годишна даночна пријава за утврдување на персонален данок од доход(образец “ПДД-ГДП“).</p>
+                
+        <p>Во образецот се пријавуваат приходите кои даночниот обврзник ги остварил во текот на една календарска година и тоа: лични примања, приходи<br>
+                од самостојна дејност, приходи од имот и имотни права, од авторски права и права од индустриска сопственост, од капитал, од капитални<br>
+                добивки, добивки од игри на среќа и други наградни игри, и други приходи.<br>
+                <b>Напомена:</b> Даночниот обврзник кој остварува само приходи од плати или пензии или само приходи од земјоделска дејност или само приходи од<br>
+                самостојна дејност не е должен да поднесува Годишна даночна пријава.</p>
+        <p>Рокот за поднесување на Годишната даночна пријава е од 1 јануари до 15 март (пр. остварените приходи во 2017 година се пријавуваат најдоцна<br>
+                до 15 март 2018 година). </p>        
+        <p>Годишната даночна пријава се поднесува во два примерока и тоа лично или преку пошта (види адреси на УЈП<br>
+                http://www.ujp.gov.mk/mk/kontakt/makedonija). Пријавата може да се достави и во електронска форма преку интернет http://etax.ujp.gov.mk/</p>
+
+        <p>Годишната даночна пријава се пополнува врз основа на податоците од привремените решенија на УЈП за пријавени приходи во текот на<br>
+                календарската година и потврдите, пресметките и другите документи кои исплатувачот на приходите има обврска да ги достави до граѓанинот<br>
+                најдоцна до 25 јануари (пр. за остварените приходи во 2017 година најдоцна до 25 јануари 2018 година).<br>
+                Самостојните вршители на дејност при пополнувањето ги користат податоците од даночните биланси и друга документација. </p>
+
+        <p>На барање на Управата за јавни приходи, даночниот обврзник е должен документирано да ги докаже податоците за платените аконтации на<br>
+                данокот внесени во Годишната даночна пријава.</p>   
+                
+        <p>При пополнување на даночната пријава, податоците внесете ги читливо и целосно, со печатни букви. Податоците внесете ги во точно означените<br>
+                полиња. Не впишувајте ништо во полињата кои ги пополнува Управата за јавни приходи.</p>      
+            
+        <p>Износите се искажуваат во денари, без дени.</p>
+
+        <p>Доколку утврдите дека сте пријавиле неточни или нецелосни податоци во Годишната даночна пријава, должни сте да извршите исправка на<br>
+                “ПДД-ГДП“ преку поднесување на нова исправна даночна пријава за тој даночен период.</p>
+            
+        <p>При поднесување на исправката на претходно поднесената Годишна даночна пријава, означете го полето “Исправка на ПДД-ГДП" со внесување<br>
+                на знакот "X" и наведете го даночниот период за кој се врши исправката.</p>
+
+        <p>Во пријавата задолжително се внесуваат податоците за: Единствениот матичен број на граѓанинот (ЕМБГ), Име и презиме и адреса на живеење за<br>
+                контакт (улица и број, населено место и општина), телефон за контакт и е-пошта</p>
+
+        <h3>Остварени приходи</h3>
+        <p>За секој одделен "вид на остварен приход" внесете ги износите во соодветните колони:</p>
+
+        <h5>Бруто износ на приход</h5>
+        <p>Впишете го бруто приходот за секој одделен вид или збирот на нето приходот што сте го примиле, зголемен за износот на персоналниот данок и
+                придонесите што се платени за него.
+                По исклучок, кај приходот од ред. бр. 16 (нето-приход остварен од вршење на самостојна дејност) впишете го износот на нето-приходот утврден<br>
+                во полето 20 од Даночниот биланс (образец “ПДД-ДБ”), кај приходот од реден број 17 впишете го износот што сте го внеле во точка 5 од<br>
+                образецот “ПДД-ПЗ“, а на ред. бр. 12 впишете го само износот на каматите што биле основа за оданочување, согласно со член 49 од ЗПДД.</p>
+
+        <h5>Вкупен износ на одбитоци</h5>
+        <p>Впишете ги износите на платените придонеси и други јавни давачки, како и трошоците што ја намалиле бруто-основата при пресметување на
+                аконтациите на данокот, а кои се утврдени во Законот.
+                На ред. бр. 1, 1-а, 1-б, 1-в, 1-г и 3, покрај платените придонеси за пензиско и инвалидско осигурување, здравствено осигурување, дополнителен<br>
+                придонес за здравствено осигурување и вработување, внесете ги како одбитоци и пресметаните придонеси за кои со посебни прописи е<br>
+                предвидено ослободување од плаќање, но кои ја намалиле основата при пресметувањето на аконтациите на данокот.<br>
+                Не се внесуваат како одбитоци износите на доплатите на придонесите (придонес за водостопанство, коморски придонес и сл.) кои не влегуваат<br>
+                во категоријата бруто плата на обврзникот, туку се обврска на исплатувачите на платите.<br>
+                Кај приходите на ред. бр. 16 (нето-приход остварен од вршење на самостојна дејност) како одбиток на нето-приходот се впишува само<br>
+                ослободувањето кое се пресметува од нето-основата (член 30-к став 1-5 од Законот на персоналениот данок на доход или утврдено со друг<br>
+                закон) додека платените придонеси не се искажуваат како одбиток, бидејќи се веќе вклучени како трошок при утврдувањето на нето приходот.<br>
+                Кај приходите на ред. бр. 9, 10, 14, 17 и 18 како одбитоци се наведуваат пресметаните износи на трошоци кои во ЗПДД се утврдени во определен<br>
+                процент од бруто-основата.</p>
+            
+        <h5>Вкупен износ на платени аконтации</h5>
+        <p>Впишете ги износите на платените аконтации на персонален данок на доход во текот на годината во сите точки освен во точките 1-а, 1-б, 1-в и 1-г.<br>
+                Во точките 1-а, 1-б, 1-в и 1-г се внесува состојба 0.</p>
+
+        <h3>Забелешка</h3>
+        <p>Ова поле се пополнува доколку сакате да дадете појаснување за одреден вид на приход, платена аконтација и слично. </p>
+
+        <h3>Податоци за подносителот на пријавата</h3>
+        <p>Задолжително наведете го името и презимето на потписникот, датумот на поднесувањето и потпишете ја пријавата.</p>
+    </body>
+</html>
